@@ -8,6 +8,10 @@ st.markdown("""# This is a header
 This is text
 coucou """)
 
+secret_key = st.secrets["api_key"]
+
+st.write(secret_key)
+
 df = pd.DataFrame({
     'first column': list(range(1, 11)),
     'second column': np.arange(10, 101, 10)
